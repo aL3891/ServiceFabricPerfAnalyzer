@@ -28,8 +28,7 @@ namespace ServiceFabricPerfAnalyzer
 			InitializeComponent();
 
 			ViewModel = new MainViewModel();
+			DataContext = ViewModel;
 		}
-
-		
 	}
 }
