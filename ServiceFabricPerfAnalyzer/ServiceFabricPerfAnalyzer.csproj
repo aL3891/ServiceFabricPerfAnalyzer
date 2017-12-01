@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DefaultperfcounterProcessor.cs" />
+    <Compile Include="PerfCounterProcessorAttribute.cs" />
+    <Compile Include="SFperfcounterProcessor.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,6 +69,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="InstanceValueViewModel.cs" />
+    <Compile Include="IPerfcounterProcessor.cs" />
     <Compile Include="MainViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -73,6 +78,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PerfCounterCategoryViewModel.cs" />
+    <Compile Include="PerfCounterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
